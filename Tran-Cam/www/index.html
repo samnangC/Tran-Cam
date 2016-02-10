@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+<style>
+
+body{
+
+  background-image: url("http://thumbs.dreamstime.com/z/bus-line-art-01-1301474.jpg");
+}
+</style>
+
+    <!-- compiled css output -->
+    <link href="css/ionic.app.css" rel="stylesheet">
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/services.js"></script>
+  </head>
+  <body ng-app="starter" background-url("Untitled-1-01.png")>
+    <center>
+<h2 class="h2">The Bus</h2>
+<button onclick="is()" id="1">is leaving</button>
+<button onclick="has()" id="2">has left</button>
+<button onclick="will()" id="3">will arrive</button>
+</br>
+<h2 class="h2">At</h2>
+<select id="select">
+  <option value="a" class="Chhnang">
+    Kampong Chhnang station
+  </option>
+  <option value="b" class="Chhnang">
+    Takeo station
+  </option>
+  <option value="c" class="Chhnang">
+    Kampong Cham station
+  </option>
+</select>
+</br>
+</br>
+<button onclick="">
+Send
+</button>
+</center>
+<script type="text/javascript">
+var stationA=[];
+var stationB=[];
+var stationC=[];
+  function SELECT() {
+    var select= doctument.getElementById('select').value;
+    if (select == 'a') {
+      var A= 'a';
+      stationA.push(A);
+    }
+    if (select == 'b') {
+      var B= 'b';
+      stationB.push(B);
+    }
+    if (select == 'c') {
+      var C= 'c';
+      stationC.push(C);
+    }
+  }
+var I_S=[];
+var H_A_S=[];
+var W_I_L_L=[];
+
+function is(){
+  var IS= 'is';
+  alert("The bus is leaving: ");
+  }
+function has(){
+  var HAS= 'has';
+  alert("The bus has left: ");
+  }
+function will(){
+  var WILL= 'will';
+  alert("The bus will arrive: ");
+  }
+
+</script>
+  </body>
+</html>
