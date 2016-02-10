@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Second page</title>
+	<link rel="stylesheet" type="text/css" href="second.css">
+</head>
+<body>
+<center>
+<h2 class="h2">The Bus</h2>
+<button onclick="is()" id="1">is leaving</button>
+<button onclick="has()" id="2">has left</button>
+<button onclick="will()" id="3">will arrive</button>
+</br>
+<h2 class="h2">At</h2>
+<select id="select">
+	<option value="a" class="Chhnang">
+		Kampong Chhnang station
+	</option>
+	<option value="b" class="Chhnang">
+		Takeo station
+	</option>
+	<option value="c" class="Chhnang">
+		Kampong Cham station
+	</option>
+</select>
+</br>
+</br>
+<button onclick="">
+Send
+</button>
+</center>
+<script type="text/javascript">
+var stationA=[];
+var stationB=[];
+var stationC=[];
+	function SELECT() {
+		var select= doctument.getElementById('select').value;
+		if (select == 'a') {
+			var A= 'a';
+			stationA.push(A);
+		}
+		if (select == 'b') {
+			var B= 'b';
+			stationB.push(B);
+		}
+		if (select == 'c') {
+			var C= 'c';
+			stationC.push(C);
+		}
+	}
+var I_S=[];
+var H_A_S=[];
+var W_I_L_L=[];
+
+function is(){
+	var IS= 'is';
+	alert("The bus is leaving: ");
+	}
+function has(){
+	var HAS= 'has';
+	alert("The bus has left: ");
+	}
+function will(){
+	var WILL= 'will';
+	alert("The bus will arrive: ");
+	}
+
+</script>
+</body>
+</html>
